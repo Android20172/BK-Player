@@ -16,13 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.latrodectus.bkplayer.Login" >
+        <activity android:name="com.example.latrodectus.bkplayer.view.Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.latrodectus.bkplayer.view.Main_Screen" />
+        <activity android:name="com.example.latrodectus.bkplayer.view.Detail_Screen" />
     </application>
 
 </manifest>
