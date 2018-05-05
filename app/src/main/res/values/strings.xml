@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BK Player</string>
+    <string name="logo_name">BK Player</string>
+    <string name="username_Tv">Tài Khoản:</string>
+    <string name="username_hint">Enter your email here...</string>
+    <string name="password_TV">Mật Khẩu:</string>
+    <string name="loginBtn">Đăng Nhập</string>
+    <string name="registerBtn">Đăng Ký</string>
 </resources>

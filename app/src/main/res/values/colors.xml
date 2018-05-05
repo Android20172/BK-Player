@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="logo_color">#ffffff</color>
+    <color name="user_pass_Tv_color">#ffffff</color>
+    <color name="user_pass_EditText_color">#ffffff</color>
+    <color name="hint_color">#ffffff</color>
 </resources>
