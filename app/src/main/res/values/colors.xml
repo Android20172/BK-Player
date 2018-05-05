@@ -7,4 +7,6 @@
     <color name="user_pass_Tv_color">#ffffff</color>
     <color name="user_pass_EditText_color">#ffffff</color>
     <color name="hint_color">#ffffff</color>
+    <color name="btn_login_register_color">#ffffff</color>
+    <color name="transparency_white_50">#50ffffff</color>
 </resources>
