@@ -9,4 +9,5 @@
     <color name="hint_color">#ffffff</color>
     <color name="btn_login_register_color">#ffffff</color>
     <color name="transparency_white_50">#50ffffff</color>
+    <color name="press_btn_color">#70ffffff</color>
 </resources>
