@@ -6,4 +6,5 @@
     <string name="password_TV">Mật Khẩu:</string>
     <string name="loginBtn">Đăng Nhập</string>
     <string name="registerBtn">Đăng Ký</string>
+    <string name="skip_login_btn">Bỏ qua</string>
 </resources>
