@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\DaiPhongPC\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\46bb7bad1c7fb71b487e7c18b689e650\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\DaiPhongPC\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7dd0cae659df6164b09adeeda5ec776d\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\DaiPhongPC\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d62eb32a8a7147cdbf919775677ac1ea\AndroidManifest.xml:17:1-22:12
@@ -16,61 +16,81 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\DaiPhongPC\.gr
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\DaiPhongPC\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\959b135cdb78a195731b7ef81d5ba165\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\DaiPhongPC\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3f9e753030987ce0433955ba498d2a85\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\DaiPhongPC\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\536e81474b61670c18365456fdc85101\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:6:22-78
 application
-ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:5:5-21:19
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:8:5-30:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\DaiPhongPC\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7dd0cae659df6164b09adeeda5ec776d\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\DaiPhongPC\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\7dd0cae659df6164b09adeeda5ec776d\AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:12:9-43
 	android:icon
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:7:9-38
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:10:9-38
 	android:allowBackup
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:14:9-40
 activity#com.example.latrodectus.bkplayer.view.Login
-ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:12:9-18:20
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:12:19-45
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:15:19-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:19:27-74
 activity#com.example.latrodectus.bkplayer.view.Main_Screen
-ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:19:9-54
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:22:9-54
 	android:name
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:19:19-51
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:22:19-51
 activity#com.example.latrodectus.bkplayer.view.Detail_Screen
-ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:20:9-65
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:23:9-56
 	android:name
-		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:20:19-53
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:23:19-53
+service#com.example.latrodectus.bkplayer.controller.MemoryLoad
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:25:9-28:47
+	android:enabled
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:27:13-35
+	android:exported
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:26:13-50
+receiver#com.example.latrodectus.bkplayer.controller.MyBroadcastReceiver
+ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:29:9-68
+	android:name
+		ADDED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml:29:19-65
 uses-sdk
 INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\DaiPhongPC\Desktop\BK-Player\app\src\main\AndroidManifest.xml
