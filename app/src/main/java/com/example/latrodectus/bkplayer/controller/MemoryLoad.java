@@ -2,6 +2,7 @@ package com.example.latrodectus.bkplayer.controller;
 
 import android.app.Service;
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
 import android.util.Log;
@@ -39,34 +40,35 @@ public class MemoryLoad extends Service {
                 try {
                     Intent intent = new Intent("com.example.latrodectus.bkplayer.SHOW_DATA");
 
+                    Bundle bundle = new Bundle();
+
                     ArrayList<File> list = ExternalMemoryScan.getList(Environment.getExternalStorageDirectory());
 
                     ArrayList<String> s_name = new ArrayList<>();
                     ArrayList<String> s_artist = new ArrayList<>();
                     ArrayList<String> s_album = new ArrayList<>();
                     ArrayList<String> s_path = new ArrayList<>();
-                    ArrayList<Number> s_track = new ArrayList<>();
 
                     for (int i = 0; i < list.size(); ++i) {
                         Song song = Id3TagReader.id3Reader(list.get(i).toString());
 
                         Log.d("Song Info", "Name: " + song.getSong_name() +
-                        "\nArtist: " + song.getSong_artist() +
-                        "\nAlbum: " + song.getSong_album() +
-                        "\nPath: " + song.getSong_path() +
-                        "\nTrack number: " + song.getSong_track_number());
+                                "\nArtist: " + song.getSong_artist() +
+                                "\nAlbum: " + song.getSong_album() +
+                                "\nPath: " + song.getSong_path());
 
                         s_name.add(song.getSong_name());
                         s_artist.add(song.getSong_artist());
                         s_album.add(song.getSong_album());
-                        s_path.add(song.getSong_artist());
-                        s_track.add(song.getSong_track_number());
+                        s_path.add(song.getSong_path());
                     }
-                    intent.putExtra("song_name", s_name);
-                    intent.putExtra("song_artist", s_artist);
-                    intent.putExtra("song_album", s_album);
-                    intent.putExtra("song_path", s_path);
-                    intent.putExtra("song_track", s_track);
+
+                    bundle.putStringArrayList("song_name", s_name);
+                    bundle.putStringArrayList("song_artist", s_artist);
+                    bundle.putStringArrayList("song_album", s_album);
+                    bundle.putStringArrayList("song_path", s_path);
+
+                    intent.putExtra("Key", bundle);
                     sendBroadcast(intent);
                 } catch (Exception e) {
                     e.printStackTrace();

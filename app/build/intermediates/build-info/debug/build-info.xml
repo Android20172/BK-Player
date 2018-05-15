@@ -5,60 +5,35 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.1.2"
-    timestamp="1526019613727"
+    timestamp="1526346340700"
     token="7519613454210994888"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2991" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="282" />
+        duration="0" />
     <task
         name="verifier"
-        duration="456" />
+        duration="0" />
 
-    <artifact
-        location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
     <artifact
         location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1526018586308"
+        timestamp="1526345913650"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
+            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
@@ -70,6 +45,9 @@
             type="SPLIT" />
         <artifact
             location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -89,39 +67,11 @@
         <artifact
             location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1526019613727"
+        timestamp="1526346340700"
         verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
         <artifact
             location="C:\Users\DaiPhongPC\Desktop\BK-Player\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />

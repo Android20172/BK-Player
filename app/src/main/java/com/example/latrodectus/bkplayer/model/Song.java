@@ -5,17 +5,25 @@ public class Song {
     private String song_path = "default_song_path";
     private String song_artist = "default_song_artist";
     private String song_album = "default_song_album";
-    private Number song_track_number = 0;
 
     public Song() {
     }
 
-    public Song(String name, String path, String artist, String album, int track_number) {
+    public Song(String name, String path, String artist, String album, int track_number, byte[] cover) {
         this.song_name = name;
         this.song_album = album;
         this.song_artist = artist;
         this.song_path = path;
-        this.song_track_number = track_number;
+    }
+
+    @Override
+    public String toString() {
+        return "Song{" +
+                "song_name='" + song_name + '\'' +
+                ", song_path='" + song_path + '\'' +
+                ", song_artist='" + song_artist + '\'' +
+                ", song_album='" + song_album + '\'' +
+                '}';
     }
 
     public String getSong_name() {
@@ -50,11 +58,4 @@ public class Song {
         this.song_album = song_album;
     }
 
-    public Number getSong_track_number() {
-        return song_track_number;
-    }
-
-    public void setSong_track_number(Number song_track_number) {
-        this.song_track_number = song_track_number;
-    }
 }

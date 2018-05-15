@@ -1,13 +1,20 @@
 package com.example.latrodectus.bkplayer.view;
 
 import android.content.BroadcastReceiver;
+import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.bumptech.glide.Glide;
 import com.example.latrodectus.bkplayer.R;
 import com.example.latrodectus.bkplayer.controller.MemoryLoad;
 
@@ -40,14 +47,44 @@ public class Main_Screen extends AppCompatActivity {
     public class MyBroadcastReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            ArrayList<String> s_name = intent.getStringArrayListExtra("song_name");
-            ArrayList<String> s_artist = intent.getStringArrayListExtra("song_artist");
-            ArrayList<String> s_album = intent.getStringArrayListExtra("song_album");
-            ArrayList<String> s_path = intent.getStringArrayListExtra("song_path");
-            ArrayList<String> s_track = intent.getStringArrayListExtra("song_track");
 
-            CustomListView arrayAdapter = new CustomListView(Main_Screen.this, R.layout.list, s_artist, s_name);
+            Intent intent1 = getIntent();
+            Bundle bundle = intent.getBundleExtra("Key");
+            ArrayList<String> s_name = bundle.getStringArrayList("song_name");
+            ArrayList<String> s_artist = bundle.getStringArrayList("song_artist");
+            ArrayList<Integer> thumb = new ArrayList<>();
+            for(int i = 0; i < s_name.size(); ++i) {
+                thumb.add(R.drawable.music);
+            }
+
+            CustomListView arrayAdapter = new CustomListView(Main_Screen.this, R.layout.list, s_name, s_artist, thumb);
             list.setAdapter(arrayAdapter);
+        }
+    }
+
+    public void getAudioAlbumImageContentUri(Context context, String filePath) {
+        Uri audioUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+        String selection = MediaStore.Audio.Media.DATA + "=? ";
+        String[] projection = new String[] { MediaStore.Audio.Media._ID , MediaStore.Audio.Media.ALBUM_ID};
+
+        Cursor cursor = context.getContentResolver().query(
+                audioUri,
+                projection,
+                selection,
+                new String[] { filePath }, null);
+
+        if (cursor != null && cursor.moveToFirst()) {
+            long albumId = cursor.getLong(cursor.getColumnIndex(MediaStore.Audio.Media.ALBUM_ID));
+            Uri sArtworkUri = Uri.parse("content://media/external/audio/albumart");
+            Uri imgUri = ContentUris.withAppendedId(sArtworkUri,
+                    albumId);
+            Log.d("TAG","AudioCoverImgUri = "+ imgUri.toString());
+
+            Glide.with(this)
+                    .load(imgUri)
+                    .into(((ImageView)findViewById(R.id.imageView)));
+
+            cursor.close();
         }
     }
 }

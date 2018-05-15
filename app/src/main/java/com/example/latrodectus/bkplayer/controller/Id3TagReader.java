@@ -34,24 +34,19 @@ public class Id3TagReader {
             try {
                 IMusicMetadata metadata = src_set.getSimplified();
 
-                String artist, album, song_title;
-                Number track_number;
+                String artist, album, title;
 
-                if(nullCheck(metadata.getArtist())) {
-                    artist = metadata.getArtist();
-                    song.setSong_artist(artist);
-                }
-                if(nullCheck(metadata.getAlbum())) {
-                    album = metadata.getAlbum();
-                    song.setSong_album(album);
-                }
-                if(nullCheck(metadata.getSongTitle())) {
-                    song_title = metadata.getSongTitle();
-                    song.setSong_name(song_title);
-                }
-                track_number = metadata.getTrackNumber();
+                album = metadata.getAlbum();
+                artist = metadata.getArtist();
+                title = metadata.getSongTitle();
 
-                song.setSong_track_number(track_number);
+                nullCheck(album);
+                nullCheck(artist);
+                nullCheck(title);
+
+                song.setSong_name(title);
+                song.setSong_album(album);
+                song.setSong_artist(artist);
                 song.setSong_path(pathdata);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -60,12 +55,9 @@ public class Id3TagReader {
         return song;
     }
 
-    private static boolean nullCheck(String state) {
-        if (state == null) {
+    private static String nullCheck(String state) {
+        if (state == null)
             state = "Unknown";
-            return true;
-        }
-        return false;
+        return state;
     }
 }
-
