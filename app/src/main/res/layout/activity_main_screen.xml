@@ -12,17 +12,19 @@
         android:background="@drawable/main_vertical"
         android:orientation="vertical">
 
-            <ListView
-                android:id="@+id/list_music"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scrollbarAlwaysDrawHorizontalTrack="true" />
+        <ListView
+            android:id="@+id/list_music"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="56dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="true" />
 
-            <TextView
-                android:id="@+id/empty"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="There is no song in your memmory!!!" />
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="There is no song in your memmory!!!" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

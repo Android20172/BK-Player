@@ -1,6 +1,7 @@
 package com.example.latrodectus.bkplayer.model;
 
 public class Song {
+    private int song_id = -1;
     private String song_name = "default_song_name";
     private String song_path = "default_song_path";
     private String song_artist = "default_song_artist";
@@ -9,21 +10,32 @@ public class Song {
     public Song() {
     }
 
-    public Song(String name, String path, String artist, String album, int track_number, byte[] cover) {
+    public Song(int id, String path, String name, String artist, String album) {
+        this.song_id = id;
         this.song_name = name;
         this.song_album = album;
         this.song_artist = artist;
         this.song_path = path;
     }
 
+
     @Override
     public String toString() {
         return "Song{" +
-                "song_name='" + song_name + '\'' +
+                "song_id=" + song_id +
+                ", song_name='" + song_name + '\'' +
                 ", song_path='" + song_path + '\'' +
                 ", song_artist='" + song_artist + '\'' +
                 ", song_album='" + song_album + '\'' +
                 '}';
+    }
+
+    public int getSong_id() {
+        return song_id;
+    }
+
+    public void setSong_id(int song_id) {
+        this.song_id = song_id;
     }
 
     public String getSong_name() {

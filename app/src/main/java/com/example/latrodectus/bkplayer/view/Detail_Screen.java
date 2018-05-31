@@ -10,7 +10,7 @@ public class Detail_Screen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail__screen);
+        setContentView(R.layout.activity_media_player);
         getSupportActionBar().hide(); //by Hieu
     }
 }

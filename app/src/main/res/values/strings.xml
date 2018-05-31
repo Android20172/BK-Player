@@ -7,4 +7,20 @@
     <string name="loginBtn">Đăng Nhập</string>
     <string name="registerBtn">Đăng Ký</string>
     <string name="skip_login_btn">Bỏ qua</string>
+    <string name="default_version">1.0.0.0001</string>
+    <string name="developer_name">Bùi Trung Hiếu, Lê Văn Đồng, Nguyễn Huy Hoàng</string>
+    <string name="support_email">buitrunghieu1997@gmail.com</string>
+    <string name="playing_from">Playing From:</string>
+    <string name="music_library">Device Storage</string>
+    <string name="album_art">Album Art</string>
+    <string name="time_zero">00:00</string>
+    <string name="repeat_button">Repeat</string>
+    <string name="previous_button">Previous</string>
+    <string name="play_button">Play</string>
+    <string name="next_button">Next</string>
+    <string name="shuffle_button">Shuffle</string>
+    <string name="artist_name">Artist</string>
+    <string name="album_name">Album</string>
+    <string name="track_title">Track Title</string>
+    <string name="album_art_thumbnail">Album Art Thumbnail</string>
 </resources>

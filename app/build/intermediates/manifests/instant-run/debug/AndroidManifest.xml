@@ -40,6 +40,11 @@
 
         <receiver android:name="com.example.latrodectus.bkplayer.controller.MyBroadcastReceiver" />
 
+        <service
+            android:name="com.example.latrodectus.bkplayer.controller.DBLoad"
+            android:enabled="true"
+            android:exported="true" />
+
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
             android:authorities="com.example.latrodectus.bkplayer.com.android.tools.ir.server.InstantRunContentProvider"
